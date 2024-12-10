@@ -3,7 +3,19 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --font_p: "Sriracha", cursive;
+    --font_normal: Verdana, Geneva, Tahoma, sans-serif;
+    --font_header: "Passion One", serif;
+    --cor_branca: white;
+    --cor_preta: black;
+}
+
+html, body {
+    font-family: var(--font_normal);
+    min-height: 100vh;
+}
 
 header {
     background-color: black;
@@ -13,11 +25,136 @@ header {
 }
 
 header > p {
-    padding-bottom: 30px;
+    padding: 5px 0px 40px 0px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    font-size: 0.7em;
 }
 
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+
+
 h1 {
-    font-family: "Passion One", sans-serif;
-    font-size: 48px;
-    font-weight: 900;
+    font-family: "Passion One", serif;
+    /* font-size: 3em; */
+    font-size: 1.8em;
+    padding-top: 20px;
+    font-variant: small-caps;
+}
+
+section {
+    font-family: var(--font_p);
+    padding: 50px 0px 40px 20px;
+}
+
+section > p {
+    /* line-height: 50px; */
+    line-height: 30px; 
+    /* font-size: 2em; */
+    font-size: 1em;
+    width: fit-content;
+    padding: 5px;
+}
+
+
+.comimg {
+    background-color: grey;
+}
+
+.normal {
+    p {
+        padding-bottom: 45px;
+    }
+}
+
+footer {
+    background-color: var(--cor_preta);
+    color: var(--cor_branca);
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    a {
+        text-decoration: none;
+        color: var(--cor_branca);
+        font-weight: bold;
+    }
+    p {
+        padding-bottom: 5px;
+    }
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+#p_comimg {
+    background: url(imagens/background001.jpg) center center no-repeat fixed;
+    background-size: cover;
+    p {
+        background-color: var(--cor_preta);
+        color: var(--cor_branca);
+    }
+}
+
+#s_comimg {
+    background: url(imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+    p {
+        background-color: rgba(0, 0, 0, 0.507);
+        color: var(--cor_branca);
+    }
+}
+
+@media (min-width: 620px) {
+     section > p {
+        font-size: 1.3em;
+        line-height: 40px;
+    } 
+
+    header {
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    section > p {
+        font-size: 1.5em;
+        line-height: 50px;
+    }
+
+    header {
+        h1 {
+            font-size: 3.8em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    section > p {
+        font-size: 3.5em;
+        line-height: 120px;
+    }
+
+    header {
+        h1 {
+            font-size: 9em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+    }
 }
