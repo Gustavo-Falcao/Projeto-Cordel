@@ -65,6 +65,7 @@ section > p {
 
 .comimg {
     background-color: grey;
+    box-shadow: inset 1px 1px 13px rgba(0, 0, 0, 0.753);
 }
 
 .normal {
@@ -94,7 +95,7 @@ footer > p > a:hover {
 }
 
 #p_comimg {
-    background: url(imagens/background001.jpg) center center no-repeat fixed;
+    background: url(imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
     p {
         background-color: var(--cor_preta);
